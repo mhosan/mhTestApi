@@ -36,15 +36,36 @@ namespace mhTestApi
                 options.UseSqlServer(Configuration["ConnectionStrings:SqlMhTest.somee.com"])
             );
 
+            services.AddCors(options =>
+            {
+                //var origins = Configuration.GetSection("Cors:Origins").Get<string[]>();
+                //options.AddPolicy(_MyCors,
+                //    builder =>
+                //        builder
+                //        .WithOrigins(origins)
+                //        .AllowAnyMethod()
+                //        .AllowAnyHeader()
+                //        .AllowCredentials()
+                //        );
+                options.AddPolicy("NewPolicy", app =>
+                {
+                    app.AllowAnyOrigin()
+                           .AllowAnyHeader()
+                           .AllowAnyMethod();
+                });
+
+            });
+
             // Configurar Swagger
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
-                {  Title = "MH Services",
-                    Version = "v1" 
+                {
+                    Title = "MH Services",
+                    Version = "v1"
                 });
             });
-       
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,18 +85,20 @@ namespace mhTestApi
                 endpoints.MapControllers();
             });
 
-         
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
 
-                // Habilitar Swagger 
-                app.UseSwagger();
-                app.UseSwaggerUI(c =>
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseDeveloperExceptionPage();
+
+            //    // Habilitar Swagger 
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Nombre de la API v1");
                 });
-            }
+            //}
+            app.UseCors("NewPolicy");
+
             app.Run(async r =>
             {
                 await Task.Run(() =>

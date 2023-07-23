@@ -51,6 +51,10 @@
               "target": "Package",
               "version": "[3.1.32, )"
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
               "version": "[6.5.0, )"
