@@ -2,14 +2,23 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-// Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
-// If you have enabled NRTs for your project, then un-comment the following line:
-// #nullable disable
+// Archivo de contexto (representa una sesion en la bd)
+// permite manejar cadenas de conexión
+// permite crear modelos y relaciones entre ellos
+// permite hacer seguim. de los cambios de los datos
+// permite hacer operaciones en la bd, incluso cachear
+// 
 
 namespace mhTestApi.Models
 {
+    /// <summary>
+    /// Clase de contexto, hereda de DBContext
+    /// </summary>
     public partial class DBmhtestContext : DbContext
     {
+        /// <summary>
+        /// Constructor de la clase
+        /// </summary>
         public DBmhtestContext()
         {
         }
@@ -19,18 +28,24 @@ namespace mhTestApi.Models
         {
         }
 
-        public virtual DbSet<Tarea> Tarea { get; set; }
+        /// <summary>
+        /// Referencia al modelo de la tabla Tarea
+        /// </summary>
+        public DbSet<Tarea> Tarea { get; set; }
+        /// <summary>
+        /// Referencia a la tabla ClientMachine con los datos del equipo del cliente
+        /// </summary>
+        public DbSet<ClientMachine> ClientMachine { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            
+        {     
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Tarea>(entity =>
             {
-                entity.HasKey(e => e.idTarea)
+                entity.HasKey(e => e.IdTarea)
                     .HasName("PK__Tarea__756A54024F95DB6D");
 
                 entity.Property(e => e.nombre).IsUnicode(false);
