@@ -9,20 +9,21 @@ using mhTestApi.Models;
 
 namespace mhTestApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("acadUtil/clientMachine")]
     [ApiController]
-    public class ClientMachinesController : ControllerBase
+    public class AcadUtils : ControllerBase
     {
         private readonly DBmhtestContext _context;
 
-        public ClientMachinesController(DBmhtestContext context)
+        public AcadUtils(DBmhtestContext context)
         {
             _context = context;
         }
 
 
-        // GET: api/ClientMachines
+        // GET: api/ClientMachine
         [HttpGet]
+        [Route("list")]
         public async Task<ActionResult<IEnumerable<ClientMachine>>> GetClientMachine()
         {
             return await _context.ClientMachine.ToListAsync();
@@ -30,7 +31,8 @@ namespace mhTestApi.Controllers
 
 
         // GET: api/ClientMachines/5
-        [HttpGet("{id}")]
+        [HttpGet]
+        [Route("list/{id}")]
         public async Task<ActionResult<ClientMachine>> GetClientMachine(int id)
         {
             var clientMachine = await _context.ClientMachine.FindAsync(id);
@@ -43,10 +45,12 @@ namespace mhTestApi.Controllers
             return clientMachine;
         }
 
+
         // PUT: api/ClientMachines/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPut("{id}")]
+        [HttpPut]
+        [Route("edit/{id}")]
         public async Task<IActionResult> PutClientMachine(int id, ClientMachine clientMachine)
         {
             if (id != clientMachine.IdClientMachine)
@@ -75,10 +79,12 @@ namespace mhTestApi.Controllers
             return NoContent();
         }
 
+
         // POST: api/ClientMachines
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
+        [Route("add")]
         public async Task<ActionResult<ClientMachine>> PostClientMachine(ClientMachine clientMachine)
         {
             _context.ClientMachine.Add(clientMachine);
@@ -87,8 +93,10 @@ namespace mhTestApi.Controllers
             return CreatedAtAction("GetClientMachine", new { id = clientMachine.IdClientMachine }, clientMachine);
         }
 
+
         // DELETE: api/ClientMachines/5
-        [HttpDelete("{id}")]
+        [HttpDelete]
+        [Route("delete/{id}")]
         public async Task<ActionResult<ClientMachine>> DeleteClientMachine(int id)
         {
             var clientMachine = await _context.ClientMachine.FindAsync(id);
