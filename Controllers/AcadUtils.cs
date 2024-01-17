@@ -32,7 +32,7 @@ namespace mhTestApi.Controllers
 
         // GET: api/ClientMachines/5
         [HttpGet]
-        [Route("list/{id}")]
+        [Route("{id}")]
         public async Task<ActionResult<ClientMachine>> GetClientMachine(int id)
         {
             var clientMachine = await _context.ClientMachine.FindAsync(id);
