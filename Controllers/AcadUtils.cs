@@ -22,7 +22,8 @@ namespace mhTestApi.Controllers
 
 
         /// <summary>
-        /// GET: acadUtil/clientMachine
+        /// Este get no recibe parametros.
+        /// GET: acadUtil/clientMachine/list
         /// </summary>
         /// <returns> una lista con los equipos ciente </returns>
         [HttpGet]
@@ -33,7 +34,12 @@ namespace mhTestApi.Controllers
         }
 
 
-        // GET: api/ClientMachines/5
+        /// <summary>
+        /// Este get recibe un parametro (No query param)
+        /// GET: acadUtil/ClientMachines/5
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>ClientMachine</returns>
         [HttpGet]
         [Route("{id}")]
         public async Task<ActionResult<ClientMachine>> GetClientMachine(int id)
@@ -48,6 +54,8 @@ namespace mhTestApi.Controllers
 
 
         /// <summary>
+        /// Este get recibe un query param.
+        /// GET: acadUtil/ClientMachine/validateLicense?hexMacAddress=876969786
         /// Recibir macAddress, validar licencia y devolver true o false
         /// </summary>
         /// <param name="hexMacAddress"></param>
@@ -85,14 +93,21 @@ namespace mhTestApi.Controllers
                 // En este ejemplo, simplemente asumiremos que cualquier cadena de 12 caracteres es válida
                 isValid = true;
             }
-
             return isValid;
         }
 
 
-        // PUT: api/ClientMachines/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        /// <summary>
+        /// PUT: acadUtil/ClientMachine/edit/4
+        /// </summary>
+        /// <param name="id"></param>
+        /// en el body:
+        /// {
+        ///"idClientMachine": 4,
+        ///"macAddress": "45087599038"
+        ///}
+        /// <param name="idClientMachine">Este parámetro va en el body, junto con la macaddress </param>
+        /// <returns></returns>
         [HttpPut]
         [Route("edit/{id}")]
         public async Task<IActionResult> PutClientMachine(int id, ClientMachine clientMachine)
