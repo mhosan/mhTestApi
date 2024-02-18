@@ -116,9 +116,7 @@ namespace mhTestApi.Controllers
             {
                 return BadRequest();
             }
-
             _context.Entry(clientMachine).State = EntityState.Modified;
-
             try
             {
                 await _context.SaveChangesAsync();
@@ -134,7 +132,6 @@ namespace mhTestApi.Controllers
                     throw;
                 }
             }
-
             return NoContent();
         }
 
