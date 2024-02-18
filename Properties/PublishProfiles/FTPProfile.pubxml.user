@@ -5,9 +5,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnBkCUQPSrUS68gLs5qxRUwAAAAACAAAAAAADZgAAwAAAABAAAACT7OzgpgLs5mHpGCkmxtGLAAAAAASAAACgAAAAEAAAALAU6TLlRg7HMZLcQ4zb81gYAAAAvRbJ/j6bZnREa3isS/+JrJAakuI/T+yiFAAAAKd32Dm+hpFqTLxgaqbDjsHw5qBM</EncryptedPassword>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACLLgUgwv0EegRdAtvCsesQAAAAACAAAAAAAQZgAAAAEAACAAAAAFH8eXbpiN3H3aWp3rXRnnbBy4FxvsTtTRl9lYFo9gogAAAAAOgAAAAAIAACAAAAAkoo8yjq+VoVm4LCRUpdnR5qAKrA2G0R1JRqERojIvCiAAAADKKFNSJ6nDzGp0djYrUfO/OEk9quxLu3GZVUKiwdljsUAAAABD+KxyBg9tYqnWXnHz5YPSSJgTW3Xpnff9u0euDiirhzibz0oRcJChoMgiLGqhDXeLEjTXeiUzD3Aest/OCK3O</EncryptedPassword>
     <_PublishTargetUrl>ftp://mhtest.somee.com/www.mhtest.somee.com</_PublishTargetUrl>
-    <History>True|2024-01-14T13:15:33.3608034Z;True|2023-07-23T18:45:35.7821425-03:00;True|2023-07-23T13:15:56.5128883-03:00;False|2023-07-23T13:12:20.6028916-03:00;False|2023-07-23T13:06:14.9264914-03:00;False|2023-07-23T13:04:34.9278531-03:00;False|2023-07-23T13:03:54.7158952-03:00;True|2023-07-23T13:00:37.6112003-03:00;False|2023-07-23T12:56:50.9570099-03:00;True|2023-07-23T12:32:34.0551512-03:00;</History>
+    <History>True|2024-01-18T13:12:42.8001857Z;True|2024-01-18T09:51:28.3576043-03:00;True|2024-01-14T10:15:33.3608034-03:00;True|2023-07-23T18:45:35.7821425-03:00;True|2023-07-23T13:15:56.5128883-03:00;False|2023-07-23T13:12:20.6028916-03:00;False|2023-07-23T13:06:14.9264914-03:00;False|2023-07-23T13:04:34.9278531-03:00;False|2023-07-23T13:03:54.7158952-03:00;True|2023-07-23T13:00:37.6112003-03:00;False|2023-07-23T12:56:50.9570099-03:00;True|2023-07-23T12:32:34.0551512-03:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -18,7 +18,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/03/2024 19:00:05</publishTime>
     </File>
     <File Include="Controllers/AcadUtils.cs">
-      <publishTime>01/14/2024 10:00:51</publishTime>
+      <publishTime>01/17/2024 19:50:00</publishTime>
     </File>
     <File Include="Controllers/TareasController.cs">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -61,6 +61,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="es/Microsoft.CodeAnalysis.Workspaces.resources.dll">
       <publishTime>09/12/2019 14:08:36</publishTime>
+    </File>
+    <File Include="e_sqlite3.dll">
+      <publishTime>09/18/2022 16:20:44</publishTime>
     </File>
     <File Include="fr/Microsoft.CodeAnalysis.CSharp.resources.dll">
       <publishTime>09/12/2019 14:09:00</publishTime>
@@ -111,19 +114,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/12/2019 14:08:36</publishTime>
     </File>
     <File Include="mhTestApi.deps.json">
-      <publishTime>01/14/2024 10:05:51</publishTime>
+      <publishTime>01/18/2024 10:03:59</publishTime>
     </File>
     <File Include="mhTestApi.dll">
-      <publishTime>01/14/2024 10:05:15</publishTime>
+      <publishTime>01/18/2024 10:00:00</publishTime>
     </File>
     <File Include="mhTestApi.exe">
-      <publishTime>01/14/2024 10:05:15</publishTime>
+      <publishTime>01/18/2024 10:00:01</publishTime>
     </File>
     <File Include="mhTestApi.pdb">
-      <publishTime>01/14/2024 10:05:15</publishTime>
+      <publishTime>01/18/2024 10:00:00</publishTime>
     </File>
     <File Include="mhTestApi.runtimeconfig.json">
-      <publishTime>01/14/2024 10:05:16</publishTime>
+      <publishTime>01/18/2024 09:39:46</publishTime>
     </File>
     <File Include="Microsoft.AspNetCore.Razor.Language.dll">
       <publishTime>11/16/2019 03:08:46</publishTime>
@@ -380,6 +383,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll">
       <publishTime>05/15/2018 10:29:44</publishTime>
     </File>
+    <File Include="sni.dll">
+      <publishTime>07/12/2017 08:24:22</publishTime>
+    </File>
     <File Include="SQLitePCLRaw.batteries_v2.dll">
       <publishTime>09/18/2022 16:28:54</publishTime>
     </File>
@@ -450,7 +456,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/12/2019 14:08:36</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>01/14/2024 10:05:51</publishTime>
+      <publishTime>01/18/2024 10:03:59</publishTime>
     </File>
     <File Include="zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll">
       <publishTime>09/12/2019 14:09:00</publishTime>

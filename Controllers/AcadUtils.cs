@@ -24,7 +24,7 @@ namespace mhTestApi.Controllers
         /// <summary>
         /// GET: acadUtil/clientMachine
         /// </summary>
-        /// <returns> una lista </returns>
+        /// <returns> una lista con los equipos ciente </returns>
         [HttpGet]
         [Route("list")]
         public async Task<ActionResult<IEnumerable<ClientMachine>>> GetClientMachine()
