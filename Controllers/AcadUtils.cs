@@ -35,7 +35,7 @@ namespace mhTestApi.Controllers
 
 
         /// <summary>
-        /// Este get recibe un parametro (No query param)
+        /// Este get recibe un parametro (No es query param)
         /// GET: acadUtil/ClientMachines/5
         /// </summary>
         /// <param name="id"></param>
@@ -65,7 +65,7 @@ namespace mhTestApi.Controllers
         public bool ValidateLicense(string hexMacAddress)
         {
             var placaRed = hexMacAddress;
-            // Validar si el valor hexadecimal es válido para una dirección MAC
+            // Unica validación de licencia por ahora: Validar si el valor hexadecimal es válido para una dirección MAC
             bool isValid = IsValidMacAddress(hexMacAddress);
 
             // Devolver el resultado booleano
@@ -81,16 +81,11 @@ namespace mhTestApi.Controllers
         private bool IsValidMacAddress(string hexMacAddress)
         {
             // Lógica para validar si el valor hexadecimal es una dirección MAC válida
-            // Puedes implementar tu propia lógica de validación aquí, por ejemplo, asegurándote de que tenga la longitud y el formato correctos.
-            // Este es solo un ejemplo básico, puedes personalizarlo según tus necesidades.
-
             bool isValid = false;
 
-            // Verificar si el valor tiene una longitud válida para una dirección MAC (por ejemplo, 12 caracteres)
+            // Verificar si el valor tiene una longitud válida para una dirección MAC: 12 caracteres
             if (hexMacAddress.Length == 12)
             {
-                // Puedes realizar más validaciones según el formato de direcciones MAC
-                // En este ejemplo, simplemente asumiremos que cualquier cadena de 12 caracteres es válida
                 isValid = true;
             }
             return isValid;
@@ -100,21 +95,20 @@ namespace mhTestApi.Controllers
         /// <summary>
         /// PUT: acadUtil/ClientMachine/edit/4
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">recibe este parametro en la url</param>
         /// en el body:
         /// {
-        ///"idClientMachine": 4,
-        ///"macAddress": "45087599038"
-        ///}
-        /// <param name="idClientMachine">Este parámetro va en el body, junto con la macaddress </param>
-        /// <returns></returns>
+        ///     "idClientMachine": 4,
+        ///     "macAddress": "45087599038"
+        /// }
+        /// <returns>ClientMachine actualizado</returns>
         [HttpPut]
         [Route("edit/{id}")]
-        public async Task<IActionResult> PutClientMachine(int id, ClientMachine clientMachine)
+        public async Task<ActionResult<ClientMachine>> PutClientMachine(int id, ClientMachine clientMachine)
         {
             if (id != clientMachine.IdClientMachine)
             {
-                return BadRequest();
+                return BadRequest("El ID proporcionado no coincide con un ID de ClientMachine.");
             }
             _context.Entry(clientMachine).State = EntityState.Modified;
             try
@@ -125,32 +119,45 @@ namespace mhTestApi.Controllers
             {
                 if (!ClientMachineExists(id))
                 {
-                    return NotFound();
+                    return NotFound("No se encontró el ClientMachine con el ID proporcionado.");
                 }
                 else
                 {
-                    throw;
+                    return StatusCode(500, "Se produjo un error al intentar actualizar el ClientMachine.");
                 }
             }
-            return NoContent();
+            return clientMachine;
         }
 
 
-        // POST: api/ClientMachines
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        /// <summary>
+        /// POST: /acadUtil/clientMachine/add
+        /// </summary>
+        /// <param name=un objeto "ClientMachine" sin el id y sin la fecha.></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("add")]
         public async Task<ActionResult<ClientMachine>> PostClientMachine(ClientMachine clientMachine)
         {
-            _context.ClientMachine.Add(clientMachine);
-            await _context.SaveChangesAsync();
+            try
+            {
+                _context.ClientMachine.Add(clientMachine);
+                await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetClientMachine", new { id = clientMachine.IdClientMachine }, clientMachine);
+                return CreatedAtAction("GetClientMachine", new { id = clientMachine.IdClientMachine }, clientMachine);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Se produjo un error al intentar agregar el ClientMachine: {ex.Message}");
+            }
         }
 
 
-        // DELETE: api/ClientMachines/5
+        /// <summary>
+        /// DELETE: acadUtil/clientMachine/delete/7
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete]
         [Route("delete/{id}")]
         public async Task<ActionResult<ClientMachine>> DeleteClientMachine(int id)
@@ -158,7 +165,7 @@ namespace mhTestApi.Controllers
             var clientMachine = await _context.ClientMachine.FindAsync(id);
             if (clientMachine == null)
             {
-                return NotFound();
+                return NotFound("No se encontró el ClientMachine con el ID proporcionado.");
             }
 
             _context.ClientMachine.Remove(clientMachine);
