@@ -9382,23 +9382,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marcelo.hosan\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marcelo.hosan\\Source\\Repos\\mhTestApi\\mhTestApi.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\mhTestApi\\mhTestApi.csproj",
       "projectName": "mhTestApi",
-      "projectPath": "C:\\Users\\marcelo.hosan\\Source\\Repos\\mhTestApi\\mhTestApi.csproj",
-      "packagesPath": "C:\\Users\\marcelo.hosan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marcelo.hosan\\Source\\Repos\\mhTestApi\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\source\\repos\\mhTestApi\\mhTestApi.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\source\\repos\\mhTestApi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\marcelo.hosan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9406,7 +9402,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -9419,11 +9414,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -9480,7 +9470,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
