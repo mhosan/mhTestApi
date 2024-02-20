@@ -74,13 +74,15 @@ namespace mhTestApi.Controllers
 
 
         /// <summary>
+        /// ================
         /// Validar licencia
+        /// ================
         /// </summary>
         /// <param name="hexMacAddress"></param>
         /// <returns> bool </returns>
         private bool IsValidMacAddress(string hexMacAddress)
         {
-            // Lógica para validar si el valor hexadecimal es una dirección MAC válida
+            // Lógica para validar si la licencia es válida
             bool isValid = false;
 
             // Verificar si el valor tiene una longitud válida para una dirección MAC: 12 caracteres
