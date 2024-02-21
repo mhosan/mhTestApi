@@ -12,5 +12,9 @@ namespace mhTestApi.Models
         public string MacAddress { get; set; }
 
         public DateTime Created { get; set; }
+
+        public int AccessCount { get; set; }
+
+        public string IpAddress { get; set; }   
     }
 }

@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using mhTestApi.Models;
 
 namespace mhTestApi.Migrations
 {
     [DbContext(typeof(DBmhtestContext))]
-    partial class DBmhtestContextModelSnapshot : ModelSnapshot
+    [Migration("20240221155633_addFieldIntAccessAcountAndFieldStringIpAddress")]
+    partial class addFieldIntAccessAcountAndFieldStringIpAddress
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
