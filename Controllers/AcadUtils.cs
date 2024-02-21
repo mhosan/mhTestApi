@@ -99,6 +99,7 @@ namespace mhTestApi.Controllers
             return isValid;
         }
 
+
         /// <summary>
         /// Persistir la mac address y la direccion ip
         /// </summary>
@@ -124,6 +125,7 @@ namespace mhTestApi.Controllers
                 _context.ClientMachine.Add(newClientMachine);
             }
             _context.SaveChanges();
+
         }
 
 
