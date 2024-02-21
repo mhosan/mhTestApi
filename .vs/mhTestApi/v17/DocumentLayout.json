@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B00C0E77-DC51-4D67-A183-6D8665288024}|mhTestApi.csproj|c:\\users\\marcelo.hosan\\source\\repos\\mhtestapi\\controllers\\acadutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B00C0E77-DC51-4D67-A183-6D8665288024}|mhTestApi.csproj|solutionrelative:controllers\\acadutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B00C0E77-DC51-4D67-A183-6D8665288024}|mhTestApi.csproj|c:\\users\\marcelo.hosan\\source\\repos\\mhtestapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B00C0E77-DC51-4D67-A183-6D8665288024}|mhTestApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,14 +43,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AcadUtils.cs",
-              "DocumentMoniker": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Controllers\\AcadUtils.cs",
-              "RelativeDocumentMoniker": "Controllers\\AcadUtils.cs",
-              "ToolTip": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Controllers\\AcadUtils.cs",
-              "RelativeToolTip": "Controllers\\AcadUtils.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAcwHgAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T18:44:08.364Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-21T19:45:58.835Z",
               "EditorCaption": ""
             }
           ]
