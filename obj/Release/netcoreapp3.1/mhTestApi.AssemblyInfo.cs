@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mhTestApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91920fb3c9c86fd99f522a2de33f27ddb07c0f42")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f9eb7bca8c203f27685fb4fe0c8fc390d898c68")]
 [assembly: System.Reflection.AssemblyProductAttribute("mhTestApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mhTestApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Migrations\\20240221155633_addFieldIntAccessAcountAndFieldStringIpAddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240221155633_addFieldIntAccessAcountAndFieldStringIpAddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Models\\ClientMachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\ClientMachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Models\\DBmhtestContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\DBmhtestContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Models\\Tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Controllers\\AcadUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\AcadUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B00C0E77-DC51-4D67-A183-6D8665288024}|mhTestApi.csproj|c:\\users\\marcelo.hosan\\source\\repos\\mhtestapi\\controllers\\acadutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B00C0E77-DC51-4D67-A183-6D8665288024}|mhTestApi.csproj|solutionrelative:controllers\\acadutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,105 +41,17 @@
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-02-21T15:58:52.122Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T15:58:47.598Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Startup.cs",
-              "RelativeDocumentMoniker": "Startup.cs",
-              "ToolTip": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Startup.cs",
-              "RelativeToolTip": "Startup.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T15:58:36.774Z"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20240221155633_addFieldIntAccessAcountAndFieldStringIpAddress.cs",
-              "DocumentMoniker": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Migrations\\20240221155633_addFieldIntAccessAcountAndFieldStringIpAddress.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240221155633_addFieldIntAccessAcountAndFieldStringIpAddress.cs",
-              "ToolTip": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Migrations\\20240221155633_addFieldIntAccessAcountAndFieldStringIpAddress.cs",
-              "RelativeToolTip": "Migrations\\20240221155633_addFieldIntAccessAcountAndFieldStringIpAddress.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T15:56:34.932Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClientMachine.cs",
-              "DocumentMoniker": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Models\\ClientMachine.cs",
-              "RelativeDocumentMoniker": "Models\\ClientMachine.cs",
-              "ToolTip": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Models\\ClientMachine.cs",
-              "RelativeToolTip": "Models\\ClientMachine.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAowBEAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T18:44:08.335Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DBmhtestContext.cs",
-              "DocumentMoniker": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Models\\DBmhtestContext.cs",
-              "RelativeDocumentMoniker": "Models\\DBmhtestContext.cs",
-              "ToolTip": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Models\\DBmhtestContext.cs",
-              "RelativeToolTip": "Models\\DBmhtestContext.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAcwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T18:44:08.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Tarea.cs",
-              "DocumentMoniker": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Models\\Tarea.cs",
-              "RelativeDocumentMoniker": "Models\\Tarea.cs",
-              "ToolTip": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Models\\Tarea.cs",
-              "RelativeToolTip": "Models\\Tarea.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T18:44:08.359Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "AcadUtils.cs",
               "DocumentMoniker": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Controllers\\AcadUtils.cs",
               "RelativeDocumentMoniker": "Controllers\\AcadUtils.cs",
               "ToolTip": "C:\\Users\\marcelo.hosan\\source\\repos\\mhTestApi\\Controllers\\AcadUtils.cs",
               "RelativeToolTip": "Controllers\\AcadUtils.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAADgv2MAAAANAAAA",
+              "ViewState": "AQIAAF4AAAAAAAAAAADwv30AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T18:44:08.364Z"
+              "WhenOpened": "2024-02-19T18:44:08.364Z",
+              "EditorCaption": ""
             }
           ]
         },

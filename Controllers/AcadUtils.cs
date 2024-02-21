@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using mhTestApi.Models;
+using System.Net.Mail;
 
 namespace mhTestApi.Controllers
 {
@@ -64,9 +65,15 @@ namespace mhTestApi.Controllers
         [Route("validateLicense")]
         public bool ValidateLicense(string hexMacAddress)
         {
-            var placaRed = hexMacAddress;
+            var netBoard = hexMacAddress;
             // Unica validación de licencia por ahora: Validar si el valor hexadecimal es válido para una dirección MAC
-            bool isValid = IsValidMacAddress(hexMacAddress);
+            bool isValid = IsValidMacAddress(netBoard);
+            
+            if (isValid) 
+            {
+                string ipDirection = HttpContext.Connection.RemoteIpAddress.ToString();
+                SaveClientInfo(netBoard, ipDirection);
+            }
 
             // Devolver el resultado booleano
             return isValid;
@@ -74,7 +81,9 @@ namespace mhTestApi.Controllers
 
 
         /// <summary>
+        /// ================
         /// Validar licencia
+        /// ================
         /// </summary>
         /// <param name="hexMacAddress"></param>
         /// <returns> bool </returns>
@@ -82,13 +91,39 @@ namespace mhTestApi.Controllers
         {
             // Lógica para validar si el valor hexadecimal es una dirección MAC válida
             bool isValid = false;
-
             // Verificar si el valor tiene una longitud válida para una dirección MAC: 12 caracteres
             if (hexMacAddress.Length == 12)
             {
                 isValid = true;
             }
             return isValid;
+        }
+
+        /// <summary>
+        /// Persistir la mac address y la direccion ip
+        /// </summary>
+        /// <param name="MacAddress"></param>
+        /// <param name="IpAddress"></param>
+        private void SaveClientInfo(string macAddress, string ipAddress) 
+        {
+            var existingClientMachine = _context.ClientMachine.FirstOrDefault(cm => cm.MacAddress == macAddress);
+            if (existingClientMachine != null)
+            {
+                // Si la máquina cliente ya existe, incrementar el contador AccessAcount y guardar los cambios
+                existingClientMachine.AccessCount++;
+            }
+            else
+            {
+                // Si la máquina cliente no existe, crear una nueva y establecer el contador AccessAcount a 1
+                var newClientMachine = new ClientMachine
+                {
+                    MacAddress = macAddress,
+                    IpAddress = ipAddress,
+                    AccessCount = 1
+                };
+                _context.ClientMachine.Add(newClientMachine);
+            }
+            _context.SaveChanges();
         }
 
 
