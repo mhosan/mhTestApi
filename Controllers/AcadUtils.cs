@@ -112,6 +112,7 @@ namespace mhTestApi.Controllers
             {
                 // Si la máquina cliente ya existe, incrementar el contador AccessAcount y guardar los cambios
                 existingClientMachine.AccessCount++;
+                existingClientMachine.Created = DateTime.Now.AddMinutes(60);
             }
             else
             {
@@ -120,7 +121,8 @@ namespace mhTestApi.Controllers
                 {
                     MacAddress = macAddress,
                     IpAddress = ipAddress,
-                    AccessCount = 1
+                    AccessCount = 1,
+                    Created = DateTime.Now.AddMinutes(60)
                 };
                 _context.ClientMachine.Add(newClientMachine);
             }
